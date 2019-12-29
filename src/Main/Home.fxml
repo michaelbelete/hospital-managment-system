@@ -1,6 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.gluonhq.charm.glisten.control.Icon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" />
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox id="sidebar" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="600.0" prefWidth="339.0" style="-fx-background-color: #165799;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="461.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/images/mikebook-dark.png" />
+               </image>
+            </ImageView>
+            <Label text="Welcome to" textAlignment="CENTER" textFill="WHITE">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label text="HMS" textAlignment="CENTER" textFill="WHITE" textOverrun="WORD_ELLIPSIS">
+               <font>
+                  <Font name="System Bold" size="31.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <Label layoutX="421.0" layoutY="183.0" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="400.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/images/mikebook.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="421.0" layoutY="184.0" text="Welcome to hms" textFill="#727272">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="421.0" layoutY="235.0" text="Signin by entering the informations below " textFill="#bfafaf">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField layoutX="421.0" layoutY="284.0" prefHeight="32.0" prefWidth="300.0" promptText="Email">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <PasswordField layoutX="421.0" layoutY="341.0" prefHeight="26.0" prefWidth="300.0" promptText="Password">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </PasswordField>
+      <Button layoutX="421.0" layoutY="401.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="300.0" style="-fx-background-color: #165799;" text="Login" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <Button layoutX="724.0" layoutY="20.0" mnemonicParsing="false" style="-fx-background-color: #ffffff;" textFill="#513d3d">
+         <graphic>
+            <Icon content="CANCEL" style="-fx-background-color: #ffffff;" />
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>
